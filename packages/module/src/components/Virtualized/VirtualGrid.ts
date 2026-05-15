@@ -239,6 +239,11 @@ export interface VirtualGridProps {
 
   /** Inner Scroll Container element to render */
   innerScrollContainerComponent?: string | ComponentType<any>;
+
+  /** Optional custom CSS class name for the inner scroll container.
+   *  Defaults to 'pf-v6-c-table__tbody' for backward compatibility with table-based usage.
+   */
+  innerScrollContainerClassName?: string;
 }
 
 interface InstanceProps {
@@ -920,7 +925,8 @@ export class VirtualGrid extends Component<VirtualGridProps, VirtualGridState> {
       tabIndex,
       width,
       scrollContainerComponent,
-      innerScrollContainerComponent
+      innerScrollContainerComponent,
+      innerScrollContainerClassName
     } = this.props;
     const { instanceProps, needToResetStyleCache } = this.state;
 
@@ -1008,7 +1014,7 @@ export class VirtualGrid extends Component<VirtualGridProps, VirtualGridState> {
     let innerScrollContainer = null;
     if (childrenToDisplay.length > 0) {
       const innerScrollContainerProps = {
-        className: 'ReactVirtualized__VirtualGrid__innerScrollContainer pf-v6-c-table__tbody',
+        className: css('ReactVirtualized__VirtualGrid__innerScrollContainer', innerScrollContainerClassName ?? 'pf-v6-c-table__tbody'),
         key: 'ReactVirtualized__VirtualGrid__innerScrollContainer',
         role: containerRole,
         style: {

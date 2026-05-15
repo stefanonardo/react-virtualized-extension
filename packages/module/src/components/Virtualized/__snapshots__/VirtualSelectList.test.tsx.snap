@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VirtualSelectList snapshot 1`] = `
+<DocumentFragment>
+  <div
+    style="width: 300px; height: 300px;"
+  >
+    <ul
+      aria-label="Snapshot test"
+      class="ReactVirtualized__VirtualGrid pf-v6-c-menu__list"
+      role="listbox"
+      style="box-sizing: content-box; direction: ltr; height: 180px; position: relative; width: 100%; will-change: transform; overflow-x: hidden; overflow-y: hidden;"
+      tabindex="0"
+    >
+      <div
+        class="ReactVirtualized__VirtualGrid__innerScrollContainer"
+        role="presentation"
+        style="width: auto; height: 180px; max-width: 9999px; max-height: 180px; overflow: hidden; position: relative;"
+      >
+        <li
+          aria-selected="false"
+          data-row-index="0"
+          role="option"
+          style="height: 36px; left: 0px; position: absolute; top: 0px; width: 100%;"
+        >
+          Option 0
+        </li>
+        <li
+          aria-selected="false"
+          data-row-index="1"
+          role="option"
+          style="height: 36px; left: 0px; position: absolute; top: 36px; width: 100%;"
+        >
+          Option 1
+        </li>
+        <li
+          aria-selected="false"
+          data-row-index="2"
+          role="option"
+          style="height: 36px; left: 0px; position: absolute; top: 72px; width: 100%;"
+        >
+          Option 2
+        </li>
+        <li
+          aria-selected="false"
+          data-row-index="3"
+          role="option"
+          style="height: 36px; left: 0px; position: absolute; top: 108px; width: 100%;"
+        >
+          Option 3
+        </li>
+        <li
+          aria-selected="false"
+          data-row-index="4"
+          role="option"
+          style="height: 36px; left: 0px; position: absolute; top: 144px; width: 100%;"
+        >
+          Option 4
+        </li>
+      </div>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
